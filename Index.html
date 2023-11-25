@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 20%;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-row-gap: 10px;
+            grid-column-gap: 5px;
+        }
+        #header{
+            background-color: red;
+            grid-column: 1/4;
+        }
+        #header h1{
+            text-align: center;
+        }
+        #linha2 {
+            background-color: palegreen;
+        }
+        #Noticias {
+            background-color: yellow; /* Define color for Noticias */
+        }
+        #linha4 {
+            background-color: lightblue; /* Define color for linha4 */
+           
+        }
+        #linha5 {
+            background-color: rgb(10, 101, 131); /* Define color for linha4 */
+            grid-column: 2/4;
+        }
+        #linha6 {
+            background-color: rgb(10, 101, 131); /* Define color for linha4 */
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div id="header">
+            <h1>Universidade</h1>
+        </div>
+        <div id="linha2">
+            Menu
+        </div>
+        <div id="Noticias">Noticias</div>
+        <div id="linha4">Linha Destaque</div>
+        <div id="linha4">Linha sereviços</div>
+        <div id="linha5">Linha 5 Resultados</div>
+        <div id="linha6">Linha 6 Resultados</div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
