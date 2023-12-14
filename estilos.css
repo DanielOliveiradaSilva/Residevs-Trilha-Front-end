@@ -4,11 +4,11 @@ body{
 
 .container-destinos {
     display: flex;
-    gap: 20px;
     padding: 30px;
-    flex-wrap: wrap;
     font-weight: 600;
     color: #b04eee;
+    flex-direction: row;
+    justify-content: center;
   }
   
 ul {
@@ -17,31 +17,28 @@ ul {
   
 li {
     list-style-type: "\2713";
-    text-align: left;
-    margin-bottom: 5px;
-    margin-left: 25px;
+    text-align: center;
 }
   
   
 .roteiros-viagens{
-    border-radius: 10px;
-    background-color: rgb(211, 176, 237);
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    width: calc(26% - 20px);  
-    border-radius: 10px;
-    max-width: 350px; 
-    margin: 0 auto; 
+  border-radius: 10px;
+  background-color: rgb(211, 176, 237);
+  box-sizing: border-box;
+  text-align: center;
+  width: auto; 
+  padding: 50px;
+  margin: 20px;
+  font-size:  30px;
+}
+.roteiros-viagens img{
+  width: 100%;
+  height: 160px;
+  display: block; 
+  margin: 0 auto; 
+ 
 }
 
-  .roteiros-viagens img{  
-    width: 150px;
-    height: 75px;
-    display: block; 
-     margin: 0 auto; 
-    border-radius: 4px;
-  }
 
   .roteiro-preco, .roteiro-destino{
     font-family: 'Jost', sans-serif;
@@ -52,33 +49,84 @@ li {
   }
 
   .roteiro-comprar {
-    background-color: #83f377;
+    background-color: #2fd81d;
     color: white;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
     cursor: pointer;
     display: block; /* Exibe o botão como bloco para ajustar as margens */
     margin: 0 auto; /* Centraliza o botão */
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
+ 
+ /* Estilos para telas menores que 720px */
+@media (max-width: 720px) {
+  .container-destinos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Outras propriedades específicas para telas menores que 720px */
+  }
+  .roteiros-viagens{
+   
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
   .roteiros-viagens img{
-    width: 150px;
-    height: 75px;
+    width: 250px;
+    height: 130px;
     display: block; 
     margin: 0 auto; 
     border-radius: 4px;
   }
 
-  @media (min-width: 480px) {
-    .roteiros-viagens {
-      width: 100%; /* Um destino por linha em telas menores */
-    }
+  li {
+    list-style-type: "\2713";
+    text-align: center;
   }
-  
-  @media (min-width: 768px) {
-    .roteiros-viagens {
-      width: calc(33.33% - 20px); /* 33.33% para 3 destinos lado a lado, subtraindo o gap */
-    }
+
+
+  .roteiro-comprar {
+    font-size: 15px;
+    padding: 5px;
   }
+}
+/* Estilos para telas menores que 720px */
+@media (max-width: 480px) {
+  .container-destinos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Outras propriedades específicas para telas menores que 720px */
+  }
+  .roteiros-viagens{
+   
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .roteiros-viagens img{
+    width: 250px;
+    height: 130px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 4px;
+  }
+
+  li {
+    list-style-type: "\2713";
+    text-align: center;
+  }
+
+
+  .roteiro-comprar {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
