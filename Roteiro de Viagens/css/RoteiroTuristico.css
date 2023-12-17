@@ -59,8 +59,16 @@ li {
     display: block; /* Exibe o botão como bloco para ajustar as margens */
     margin: 0 auto; /* Centraliza o botão */
     margin-top: 20px;
+    opacity: 1;
   }
-  
+  .roteiro-comprar:hover {
+    
+    transition: opacity  1s;
+    opacity: 0.5;
+  }
+  .roteiro-comprar:active {
+    margin-top: 50px;
+  }
  
  /* Estilos para telas menores que 720px */
 @media (max-width: 720px) {
@@ -130,3 +138,4 @@ li {
     padding: 5px;
   }
 }
+

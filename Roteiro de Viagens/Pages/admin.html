@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <source src="./css/Admin.css" type="">
+    <title>Admin</title>
+
+    <style>
+        /* css/Admin.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="url"],
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+           width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+  
+</head>
+<body>
+    <form >
+        <h1>Novo Roteiro</h1>
+        <ul>
+            <li>
+                <label for="CartaoPostal">Cartão Postal</label>
+                <input id="CartaoPostal" type="url">
+            </li>
+            <li>
+                <label for="Destino">Destino Turistico</label>
+                <input id="Destino" type="text" placeholder="Cidade">
+            </li>
+            <li>
+                <label for="Diarias">Diarias</label>
+                <input id="Diarias" type="number">
+            </li>
+            <li>
+                <label for="Valor">Valor</label>
+                <input id="Valor" type="number">
+            </li>
+
+        </ul>
+        <input class="Cadastrar" type="button" value="Cadastrar">
+    </form>
+
+    <table class="lista-de-roteiros" >
+        <caption>Dados do Formulário</caption>
+        
+
+      
+        
+    </table>
+
+    <script src="/Javascrpt/Controller/App.js"></script>
+    <script src="/Javascrpt/Model/Roteiro.js"></script>
+    <script src="/Javascrpt/View/Admin/CadastrarRoteiro.js"></script>
+   
+
+</body>
+</html>

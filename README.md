@@ -1,1 +1,0 @@
-# Residevs-Trilha-Front-end
