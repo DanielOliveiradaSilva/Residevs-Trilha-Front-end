@@ -1,0 +1,14 @@
+
+
+<app-input (onSeache)="consultarPagina($event)" ></app-input>
+
+<div *ngIf="resultados.length > 0">
+    <h2>Resultados da Pesquisa:</h2>
+    <ul>
+      <li *ngFor="let resultado of resultados">
+        <h3 [innerHTML]="resultado.title | formatarTexto" ></h3>
+        <p [innerHTML]="resultado.snippet | formatarTexto" ></p>
+        <a [href]="getLink(resultado.title)" target="_blank">Leia mais</a>
+      </li>
+    </ul>
+</div>
