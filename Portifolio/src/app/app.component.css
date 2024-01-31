@@ -1,0 +1,33 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.menu {
+    position: static;
+    display: flex;
+    justify-content: space-around; /* Ou use 'space-between' se preferir espaçamento nas extremidades */
+    align-items: center;
+    padding: 10px; /* Ajuste conforme necessário */
+    background-color: #f0f0f0; /* Adicione uma cor de fundo para destacar a área do menu */
+  }
+  
+  button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease;
+  }
+  
+  button.clicked {
+    border-bottom: 3px solid blue;
+  }
+  
+  router-outlet {
+    width: 100%;
+    height: calc(100vh - 60px); /* Ajuste conforme necessário para a altura desejada abaixo dos botões */
+  }
+  
