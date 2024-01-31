@@ -1,0 +1,29 @@
+
+app-input {
+    display: block;
+ 
+    padding-bottom: 16px;
+}
+
+.Main {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.Categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titulo {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descricao {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}

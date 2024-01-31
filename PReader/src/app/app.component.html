@@ -1,0 +1,26 @@
+<app-input  (objetoJson)="ReceberObjetoJson($event)"></app-input>
+
+
+<div class="Main">
+    <div class="Categoria">
+        <button id="Categoria" appTitulos >Categoria</button>
+        <app-aviao  [Avioes]="Categoria" (AviaoSelecionado)="ExibirCategorias($event)" ></app-aviao>
+        <app-carros [Carros]="Categoria"  (CarroSelecionado)="ExibirCategorias($event)" ></app-carros>
+        <app-barcos [Barcos]="Categoria"  (BarcoSelecionado)="ExibirCategorias($event)" ></app-barcos>
+    
+    </div>
+    <div class="titulo">
+        <button id="Nome"  appTitulos>{{Nome}}</button>
+        <button appDestaque class="ButtomCategoria" (click) ="ExbirEspecificacao(elemente.Name)" *ngFor="let elemente of CategoriaSelecionada ">{{elemente.Name}}</button>
+    </div>
+
+    <div class="titulo">
+        <button id="Nome"  appTitulos >{{Nome}}</button>
+        <button appDestaque class="ButtomCategoria" (click) ="ExbirEspecificacao(elemente.Name)" *ngFor="let elemente of CategoriaSelecionada ">{{elemente.Name}}</button>
+    </div>
+    <div class="descricao">
+        <button id="Nome"   appTitulos>{{NomeDescricao }}</button>
+        <button appDestaque class="Buttomdescricao" *ngFor="let elemente of NomeSelecionadoDecricao">{{elemente}}</button>
+    </div>
+</div>
+
