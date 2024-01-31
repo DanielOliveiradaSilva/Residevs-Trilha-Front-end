@@ -1,0 +1,8 @@
+<div class="menu">
+  <button (click)="navigateTo('wikipediat')" [class.clicked]="currentRoute === 'wikipediat'">Projeto WikiApi</button>
+  <button (click)="navigateTo('pread')" [class.clicked]="currentRoute === 'pread'">Projeto PRead</button>
+  <button (click)="navigateTo('uesc')" [class.clicked]="currentRoute === 'uesc'">Projeto Uesc-App</button>
+  
+</div>
+
+<router-outlet></router-outlet>
