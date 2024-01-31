@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box; /* Garante que o modelo de caixa seja aplicado a todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%; /* Ajuste conforme necessário */
+    grid-template-rows: auto 400px; /* Ajuste conforme necessário */
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#header{
+    background-color: red;
+    grid-column: 1/4;
+    margin-bottom: 5px;
+} 
+
+#header h1{
+    
+    text-align: center;
+}
+
+#Menu {
+    background-color: palegreen;
+    grid-row: 2/4;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#Noticias {
+    background-color: yellow; /* Define color for Noticias */
+    padding-left: 10px;
+    grid-row: 2/4;
+}
+
+#Destaque {
+    background-color: lightblue; /* Define color for linha4 */
+    grid-row: 2/4;
+    padding-left: 10px;
+    grid-column: 3;
+}
+
+#Servico {
+    background-color: rgb(10, 101, 131); /* Define color for linha4 */
+    grid-column: 1/2;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    
+}
+
+#Resultado {
+    background-color: rgb(109, 111, 112); /* Define color for linha4 */
+    grid-column: 2/4;
+    grid-row: 4;
+   
+    margin-bottom: 5px;    
+    padding-left: 10px;
+}
+
+#Footer {
+    background-color: rgb(113, 131, 10); /* Define color for linha4 */
+    grid-column: 1/4;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#Destaque img {
+    max-width: 100%;
+    height: auto;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Aplique estilos específicos para telas menores, como dispositivos móveis */
+
+    .container {
+        display: flex; /* Altera o layout para flexbox */
+        flex-direction: column; /* Coloca os itens um abaixo do outro */
+        gap: 5px; /* Espaçamento entre os itens */
+        padding: 5px; /* Espaçamento interno */
+    }
+
+    /* Estilos para elementos individuais */
+    #Menu{
+        padding-top: 10px;
+    }
+    #Menu,
+    #Noticias,
+    #Destaque,
+    #Servico,
+    #Footer {
+        width: auto; /* Largura automática */
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    #Resultado {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    #Id1{
+        display: none;
+    }
+    #Id2{
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+        padding-right: 10px;
+
+    }
+    #Resultado{
+        padding-bottom: 10px;
+    }
+}
