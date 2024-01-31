@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplicando a fonte Roboto ao menu */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+}
+.conteiner{
+   box-sizing: border-box;
+   padding: 2px;
+   width: 50%;
+   font-family: 'Roboto', sans-serif;
+   position: relative;
+   float: right;
+    height: auto;
+    
+}
+span {
+        width: 100%;
+        border-bottom: 2px solid #000; /* Cor e espessura da linha */
+        display: inline-block; /* Garante que a borda se estenda apenas horizontalmente */
+        /* Adicione margens ou padding conforme necessário para ajustar o espaçamento */  
+}
+ul{
+    list-style-type: none;
+    
+   
+}
+ul li{
+    padding-bottom: 3px;
+}
+li a{
+    box-sizing: border-box;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    
+}
+li a:hover{
+    transition: backgoud-color 0.8s;
+    background-color: rgba(128, 128, 128, 0.096);
+}

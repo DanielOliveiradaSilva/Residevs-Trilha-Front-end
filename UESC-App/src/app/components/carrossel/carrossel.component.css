@@ -1,0 +1,51 @@
+.carousel {
+  
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.slides {
+  display: flex;
+}
+
+.image {
+  flex: 0 0 100%; /* Ajuste para o tamanho das imagens */
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navigation label {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #333;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+input[type="radio"]:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+  background-color: #333;
+  color: white;
+}

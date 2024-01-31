@@ -1,0 +1,43 @@
+.footer {
+    background-color: #0d1666;
+    color: #fff;
+    padding: 40px 0;
+    width: 70%;
+    margin-left: 17%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); /* Sombra leve */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-left,
+  .footer-right {
+    width: 45%;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-right ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

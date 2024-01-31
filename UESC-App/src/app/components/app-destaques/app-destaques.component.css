@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    float: left;
+}
+.bloco{
+  
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+    margin-bottom: 35px;
+    flex: 0 0 100%; /* Ajuste para o tamanho das imagens */
+  }
+  
+.image img {
+    width: 100%;
+  
+    height: auto;
+   
+    display: block;
+  }
