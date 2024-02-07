@@ -1,0 +1,141 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-destinos {
+    display: flex;
+    padding: 30px;
+    font-weight: 600;
+    color: #b04eee;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+ul {
+    font-family: 'Roboto', sans-serif;
+}
+  
+li {
+    list-style-type: "\2713";
+    text-align: center;
+}
+  
+  
+.roteiros-viagens{
+  border-radius: 10px;
+  background-color: rgb(211, 176, 237);
+  box-sizing: border-box;
+  text-align: center;
+  width: auto; 
+  padding: 50px;
+  margin: 20px;
+  font-size:  30px;
+}
+.roteiros-viagens img{
+  width: 100%;
+  height: 160px;
+  display: block; 
+  margin: 0 auto; 
+ 
+}
+
+
+  .roteiro-preco, .roteiro-destino{
+    font-family: 'Jost', sans-serif;
+  }
+
+  .roteiro-destino, .roteiro-preco,.roteiro-obs ,.roteiro-parcelamento, .roteiro-comprar {
+    text-align: center;  
+  }
+
+  .roteiro-comprar {
+    background-color: #2fd81d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block; /* Exibe o botão como bloco para ajustar as margens */
+    margin: 0 auto; /* Centraliza o botão */
+    margin-top: 20px;
+    opacity: 1;
+  }
+  .roteiro-comprar:hover {
+    
+    transition: opacity  1s;
+    opacity: 0.5;
+  }
+  .roteiro-comprar:active {
+    margin-top: 50px;
+  }
+ 
+ /* Estilos para telas menores que 720px */
+@media (max-width: 720px) {
+  .container-destinos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Outras propriedades específicas para telas menores que 720px */
+  }
+  .roteiros-viagens{
+   
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .roteiros-viagens img{
+    width: 250px;
+    height: 130px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 4px;
+  }
+
+  li {
+    list-style-type: "\2713";
+    text-align: center;
+  }
+
+
+  .roteiro-comprar {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+/* Estilos para telas menores que 720px */
+@media (max-width: 480px) {
+  .container-destinos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Outras propriedades específicas para telas menores que 720px */
+  }
+  .roteiros-viagens{
+   
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .roteiros-viagens img{
+    width: 250px;
+    height: 130px;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 4px;
+  }
+
+  li {
+    list-style-type: "\2713";
+    text-align: center;
+  }
+
+
+  .roteiro-comprar {
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
