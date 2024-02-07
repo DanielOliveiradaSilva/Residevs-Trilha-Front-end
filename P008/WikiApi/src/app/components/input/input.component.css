@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 29px;
+}
+.container h1{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 5.2rem;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+}
+.input input {
+    padding: 10px;
+    border: none;
+    border-bottom: red 2px solid;
+    outline: none; /* remove o contorno padrão do input */
+   
+   
+}
+.input input:hover {
+    transition:  1s ease;
+    border-bottom: none; /* remove a borda inferior padrão */
+    background-image: none; /* remove o gradiente quando o mouse está sobre o input */
+    border-bottom: red 2px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* adiciona um efeito de luz à borda inferior */
+}
+
+.input button{
+    background-color: #2FD818;
+    color: white;
+    padding: 11px 16px;
+    transition: 1s;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.input button:hover{
+   
+    background-color: white;
+    color: #1b5c12;
+    transition: 1s ease;
+    font-weight: 900;
+    border: none;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    border-bottom: #2FD818 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    
+}
