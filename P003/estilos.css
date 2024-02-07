@@ -9,8 +9,9 @@ body{
     color: #b04eee;
     flex-direction: row;
     justify-content: center;
-  }
-  
+}
+
+
 ul {
     font-family: 'Roboto', sans-serif;
 }
@@ -130,3 +131,13 @@ li {
     padding: 5px;
   }
 }
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .container-destinos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Outras propriedades específicas para telas menores que 720px */
+  }
+} 
