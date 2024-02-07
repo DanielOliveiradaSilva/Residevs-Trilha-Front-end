@@ -64,8 +64,9 @@ li {
   
  
  /* Estilos para telas menores que 720px */
-@media (max-width: 720px) {
+@media (max-width: 765px) {
   .container-destinos {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
