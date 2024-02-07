@@ -12,11 +12,11 @@
 }
 .container{
     display: grid;
-    margin: 10px auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 20%; /* Ajuste conforme necessário */
+    grid-template-rows: auto 400px; /* Ajuste conforme necessário */
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+
     justify-content: center;
     width: 80%;
 
