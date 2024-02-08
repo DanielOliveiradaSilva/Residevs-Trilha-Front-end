@@ -4,7 +4,7 @@
 }
 .conteiner {
     display: grid;
-    grid-template-columns: 30% 1fr 20%;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 77.66%;
     margin: 0 auto;
     column-gap: 5px;
@@ -180,4 +180,52 @@
 }
 .footer .container p:last-child{
     color: gray;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 100% !important;
+        display: block;
+        width: 100% !important;
+        margin: 0 auto;
+        column-gap: 5px;
+        row-gap: 5px;
+        border:  1px solid  rgba(128, 128, 128, 0.146);
+      
+    }
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 77.66%;
+    margin: 0 auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    border:  1px solid  rgba(128, 128, 128, 0.146); */
+    .navBar{
+      /* Adicione os estilos desejados para dispositivos móveis aqui */
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+    }
+    .menu{
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+    .destaque{
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+    .noticias{
+        grid-row: 4;
+        grid-column: 1/4;
+    }
+    .resultado{
+        grid-row: 5;
+        grid-column: 1/4;
+    }
+    .serviços{
+        grid-row: 6;
+        grid-column: 1/4;
+    }
 }
