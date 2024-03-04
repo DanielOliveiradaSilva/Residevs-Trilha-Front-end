@@ -3,8 +3,9 @@ body{
 }
 
 .container-destinos {
-    display: flex;
+    display: grid;
     padding: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-weight: 600;
     color: #b04eee;
     flex-direction: row;
@@ -139,3 +140,7 @@ li {
   }
 }
 
+.button:hover{
+  background-color:#7fff0075 ;
+  color: white;
+}

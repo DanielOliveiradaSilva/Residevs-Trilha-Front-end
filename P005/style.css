@@ -125,9 +125,12 @@
     grid-column: 2/3;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
-   
   
 }
+.noticias h3{
+    border-bottom: solid 1px rgba(128, 128, 128, 0.146);
+}
+
 .destaque{
     box-sizing: border-box;
     grid-row: 2;
@@ -136,6 +139,9 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
    
 }
+.destaque h3{
+    border-bottom: solid 1px rgba(128, 128, 128, 0.146);
+}
 .serviços{
     box-sizing: border-box;
     grid-column: 1/2;
@@ -143,12 +149,19 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
    
 }
+.serviços h3{
+    border-bottom: solid 1px rgba(128, 128, 128, 0.146);
+}
+
 .resultado{
     box-sizing: border-box;
     grid-column: 2/4;
     padding: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
    
+}
+.resultado h3{
+    border-bottom: solid 1px rgba(128, 128, 128, 0.146);
 }
 .footer{
    
@@ -159,6 +172,7 @@
     border-top: solid yellow 5px;
 
 }
+
 .footer .container{
     box-sizing: border-box;
     display: flex;

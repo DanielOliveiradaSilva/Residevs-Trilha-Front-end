@@ -1,0 +1,113 @@
+<form [formGroup]="FormUser" class="layot" (ngSubmit)="onSubmit()">
+  <div class="Conteiner">
+    <div>
+      <label for="nome">Nome do usuário:</label><br />
+      <input type="text" id="nome" formControlName="nome" />
+      <div *ngIf="FormUser.get('nome')?.hasError('required') && FormUser.get('nome')?.touched">
+        Nome é obrigatório.
+      </div>
+      <div *ngIf="FormUser.get('nome')?.hasError('noSpace') && FormUser.get('nome')?.touched">
+        Nome não deve conter espaços.
+      </div>
+      <div *ngIf="FormUser.get('nome')?.hasError('maxlength') && FormUser.get('nome')?.touched">
+        Nome deve ter no máximo 12 caracteres.
+      </div>
+    </div>
+
+    <div>
+      <label for="senha">Senha:</label><br />
+      <input type="password"   id="senha" formControlName="senha" />
+      <div *ngIf="FormUser.get('senha')?.hasError('required') && FormUser.get('senha')?.touched">
+        Senha é obrigatória.
+      </div>
+      <div *ngIf="FormUser.get('senha')?.hasError('minlength') && FormUser.get('senha')?.touched">
+        Senha deve ter no mínimo 4 caracteres.
+      </div>
+      <div *ngIf="FormUser.get('senha')?.hasError('pattern') && FormUser.get('senha')?.touched">
+        Senha deve incluir pelo menos uma letra maiúscula e um símbolo.
+      </div>
+    </div>
+
+    <div>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" formControlName="email" />
+      <div *ngIf="FormUser.get('email')?.hasError('required') && FormUser.get('email')?.touched">
+        Email é obrigatório.
+      </div>
+      <div *ngIf="FormUser.get('email')?.hasError('email') && FormUser.get('email')?.touched">
+        Email deve ser válido.
+      </div>
+    </div>
+
+    <div>
+      <label for="nomeCompleto">Nome Completo:</label><br />
+      <input type="text" id="nomeCompleto" formControlName="nomeCompleto" />
+      <!-- Adicione as validações necessárias para o nome completo -->
+      <div *ngIf="FormUser.get('nomeCompleto')?.hasError('required') && FormUser.get('nomeCompleto')?.touched">
+        Nome completo é obrigatório.
+      </div>
+    </div>
+
+    <div>
+      <label for="telefone">Telefone:</label><br />
+      <input type="tel" id="telefone" formControlName="telefone" />
+      <!-- Adicione as validações necessárias para o telefone -->
+      <div *ngIf="FormUser.get('telefone')?.hasError('required') && FormUser.get('telefone')?.touched">
+        Telefone é obrigatório.
+      </div>
+      <div *ngIf="FormUser.get('telefone')?.hasError('pattern') && FormUser.get('telefone')?.touched">
+        Insira um número de telefone válido.
+      </div>
+    </div>
+
+    <div>
+      <label for="endereco">Endereço:</label><br />
+      <input type="text" id="endereco" formControlName="endereco" />
+      <!-- Adicione as validações necessárias para o endereço -->
+      <div *ngIf="FormUser.get('endereco')?.hasError('required') && FormUser.get('endereco')?.touched">
+        Endereço é obrigatório.
+      </div>
+    </div>
+
+    <div>
+      <label for="dataNascimento">Data de Nascimento:</label><br />
+      <input type="date" id="dataNascimento" formControlName="dataNascimento" />
+      <!-- Adicione as validações necessárias para a data de nascimento -->
+      <div *ngIf="FormUser.get('dataNascimento')?.hasError('required') && FormUser.get('dataNascimento')?.touched">
+        Data de nascimento é obrigatória.
+      </div>
+      <div *ngIf="FormUser.get('dataNascimento')?.hasError('isAdult') && FormUser.get('dataNascimento')?.touched">
+        O usuário deve ter no mínimo 18 anos.
+      </div>
+    </div>
+
+    <div>
+      <label for="genero">Gênero:</label><br />
+      <select id="genero" formControlName="genero">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+      <!-- Adicione as validações necessárias para o gênero -->
+      <div *ngIf="FormUser.get('genero')?.hasError('required') && FormUser.get('genero')?.touched">
+        Gênero é obrigatório.
+      </div>
+    </div>
+
+    <div>
+      <label for="profissao">Profissão:</label><br />
+      <select id="profissao" formControlName="profissao">
+        <option value="engenheiro">Engenheiro</option>
+        <option value="medico">Médico</option>
+        <option value="professor">Professor</option>
+        <!-- Adicione outras opções conforme necessário -->
+      </select>
+      <!-- Adicione as validações necessárias para a profissão -->
+      <div *ngIf="FormUser.get('profissao')?.hasError('required') && FormUser.get('profissao')?.touched">
+        Profissão é obrigatória.
+      </div>
+    </div>
+
+  </div>
+  <button type="submit">Enviar</button>
+</form>
