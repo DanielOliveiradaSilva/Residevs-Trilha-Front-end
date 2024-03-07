@@ -1,0 +1,38 @@
+<nav class="menu">
+  <div style="display: flex; align-items: center; gap: 14px">
+    <div>
+      <img src="../../../assets/logo.png" />
+    </div>
+    <div>
+      <h2>PERPPHOPE</h2>
+    </div>
+  </div>
+  <div class="links">
+    <a (click)="navigateTo('home')" [class.clicked]="currentRoute === 'home'"
+      >Home</a
+    >
+    <a
+      (click)="navigateTo('adicionar')"
+      [class.clicked]="currentRoute === 'adicionar'"
+      >Adicionar</a
+    >
+    <a
+      (click)="navigateTo('listar')"
+      [class.clicked]="currentRoute === 'listar'"
+      >Listar</a
+    >
+    <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <br />
+  Desenvolvido por
+  <a href="https://www.linkedin.com/in/seu-nome" target="_blank"
+    >Daniel Oliveira da Silva</a
+  >, com muito amor ❤️ e café <i>&#9749;</i>
+  <br />
+  <br />
+</footer>

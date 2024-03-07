@@ -1,0 +1,26 @@
+<!-- tabela-atendimentos.component.html -->
+{{title}}
+<table class="table">
+    <thead>
+      <tr>
+        <th>Nº do Atendimento</th>
+        <th>Nome do Pet</th>
+        <th>Responsável</th>
+        <th>Data de Entrada</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let atendimento of atendimentos">
+        <td>{{ atendimento.numero }}</td>
+        <td>{{ atendimento.nomePet }}</td>
+        <td>{{ atendimento.responsavel }}</td>
+        <td>{{ atendimento.dataEntrada }}</td>
+        <td>
+          <button (click)="editarAtendimento(atendimento)">Editar</button>
+          <button (click)="removerAtendimento(atendimento.numero)">Remover</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

@@ -3,28 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "petshop": {
+    "petshop2": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/petshop",
+            "outputPath": "dist/petshop2",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -35,14 +24,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            
             "styles": [
-              "node_modules/materialize-css/dist/css/materialize.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "petshop:build:production"
+              "buildTarget": "petshop2:build:production"
             },
             "development": {
-              "buildTarget": "petshop:build:development"
+              "buildTarget": "petshop2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,10 +68,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "petshop:build"
+            "buildTarget": "petshop2:build"
           }
         },
-        
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -100,7 +84,6 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
