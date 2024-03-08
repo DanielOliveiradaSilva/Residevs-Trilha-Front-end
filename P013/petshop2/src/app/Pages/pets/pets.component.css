@@ -1,0 +1,89 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+/* Adicione isso no seu arquivo CSS ou no estilo global */
+.mensagem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #dff0d8; /* Verde suave */
+  color: #3c763d; /* Cor do texto verde */
+  margin-bottom: 10px;
+}
+
+table{
+    background-color: beige;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: justify;
+    margin-top: 20px;
+}
+.titleId{
+    width: 10%;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.titleName{
+    width: 40%;
+    /* border-right: 1px solid #ddd; */
+    border-bottom: 1px solid #ddd;
+}
+.titleAction{
+    text-align: center;    
+    border-bottom: 1px solid #ddd;
+}
+.col-1{
+    width: 10%;
+    border-right: 1px solid #ddd;
+}
+.col-2{
+    /* border-right: 1px solid #ddd; */
+    width: 40%;
+}
+.col-3{
+    text-align: center;
+    width:15%;
+}
+th{
+    padding: 10px;
+    
+}
+td{
+   
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+button{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.btn-cadastro{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color:#32bdd2!important;
+    color: white;
+    
+    border: none;
+    border-radius: 3px;
+}
+
+button:nth-child(2){
+    background-color: #f44336;
+}
+button:hover{
+    background-color: #45a049;
+}
+button:nth-child(2):hover{
+    background-color: #d32f2f;
+}

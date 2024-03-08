@@ -1,60 +1,19 @@
 <div>
-  <form class="form" [formGroup]="atendimentoForm" (ngSubmit)="onSubmit()">
+  <form class="form" [formGroup]="PetForm" (ngSubmit)="onSubmit()">
     <div class="FormPet">
       <img
         src="../../../assets/logo.png"
         alt=""
         style="width: 100px; margin: 0 auto"
       />
-      <h2 style="text-align: center">Adicionar Atendimento</h2>
+      <h2 style="text-align: center">Pet</h2>
+
       <div>
-        <label for="nome">Nome do Pet:</label>
-        <input type="text" formControlName="Pet.nome"style="
-        width: 100%;
-    " />
+        <label for="PetId">PetId</label>
+        <input type="number" formControlName="PetId" />
+        <label for="Nome">Nome</label>
+        <input type="text" formControlName="Nome" />
       </div>
-      <div>
-        <label for="responsavel">Responsável:</label>
-        <input type="text" formControlName="responsavel" style="
-        width: 100%;
-    " />
-      </div>
-      <div class="date-sex">
-        <div>
-          <label for="tipo">Tipo do Pet:</label>
-          <input type="text" formControlName="Pet.tipo" />
-        </div>
-
-        <div>
-          <label for="raca">Raça do Pet:</label>
-          <input type="text" formControlName="Pet.raca" />
-        </div>
-        <div>
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="date" formControlName="Pet.dataNascimento" />
-        </div>
-      </div>
-
-      <div class="date-sex">
-      
-
-        <div>
-          <label for="sexo ">Sexo do Pet:</label>
-          <select formControlName="Pet.sexo" style="width: 150px">
-            <option value="Femea">Fêmea</option>
-            <option value="Macho">Macho</option>
-          </select>
-        </div>
-        <div>
-          <label for="Status">Status:</label>
-          <select formControlName="Status">
-            <option value="Pendent">Pendente</option>
-            <option value="Em Andamento">Em Andamento</option>
-            <option value="Finalizado">Finalizado</option>
-          </select>
-        </div>
-      </div>
-      <br>
       <div>
         <button type="submit">Enviar</button>
       </div>
