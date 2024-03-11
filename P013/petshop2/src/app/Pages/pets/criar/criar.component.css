@@ -1,0 +1,64 @@
+.form {
+    width: 34%;
+  
+    margin: auto;
+    margin-top: 6px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  /* Adicione esta regra para alinhar Data de Nascimento e Sexo do Pet lado a lado */
+  .date-sex {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .FormPet {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+  }
+  
+  /* Adicione este ajuste para manter o alinhamento do restante dos elementos */
+  .FormPet > div {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilizações para os rótulos e inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  /* Estilizações para o botão */
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .inputmedio {
+    width: 30% !important;
+  }

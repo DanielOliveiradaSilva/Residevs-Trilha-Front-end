@@ -18,7 +18,7 @@ export class FormAtendimentoComponent implements OnInit {
 
   ngOnInit(): void {
     this.PetForm = this.formBuilder.group({
-      PetId: [0, Validators.required],
+      PetId: ['', Validators.required],
       Nome: ['', Validators.required],
     });
   }
@@ -27,7 +27,7 @@ export class FormAtendimentoComponent implements OnInit {
     if (this.PetForm.valid) {
       console.log(this.PetForm.value); 
       const pet:Pet = this.PetForm.value; 
-      // console.log(this._petService.postPet(pet));
+      console.log(this._petService.AdicionarPet(pet));
     }
   }
 }

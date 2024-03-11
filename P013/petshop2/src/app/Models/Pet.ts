@@ -1,4 +1,3 @@
-export class Pet{
-    id!: string;
-    nome!: string;
+export  class Pet{
+ Nome!: string;
 }

@@ -1,0 +1,22 @@
+<div>
+    <form class="form" [formGroup]="PetInputModel" (ngSubmit)="onSubmit()">
+      <div class="FormPet">
+        <img
+          src="../../../assets/logo.png"
+          alt=""
+          style="width: 100px; margin: 0 auto"
+        />
+        <h2 style="text-align: center">Pet</h2>
+  
+        <div>
+          
+          <label for="Nome">Nome</label>
+          <input type="text" formControlName="Nome" />
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

@@ -1,27 +1,31 @@
 <div class="conteiner">
   <!-- pets.component.html -->
-  <div *ngIf="mensagem" class="mensagem">
-    {{ mensagem }}
+  <div id="msg">
+    <div *ngIf="mensagem" class="mensagem">
+      {{ mensagem }}
+    </div>
   </div>
+  
   <div>
-    <button class="btn-cadastro">Cadastar</button>
+    <button class="btn-cadastro" (click)="navigateTo('pets/criar')">Cadastar</button>
   </div>
   <div>
     <table>
       <tr>
-        <th class="titleId">PetId</th>
+     
         <th class="titleName">Nome</th>
         <th class="titleAction"></th>
       </tr>
-      <tr *ngFor="let pet of pets">
-        <td class="col-1">{{ pet.id }}</td>
-        <td class="col-2">{{ pet.nome }}</td>
-        <td class="col-3">
+      <tr *ngFor="let pet of pets" class="row-1" id="deleted">
+      
+        <td class="col-2">{{ pet.Nome }}</td>
+        <td class="col-3" >
           <!-- Passar o id -->
-          <button (click)="editarPet(pet.id)">Alterar</button>
-          <button (click)="deletarPet(pet.id)">Excluir</button>
+          <button (click)="editarPet(pet)">Alterar</button>
+          <button (click)="deletarPet(pet.Id)">Excluir</button>
         </td>
       </tr>
     </table>
   </div>
 </div>
+
